@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="screensframework.Screen5Controller">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="464.0" prefWidth="600.0">
+      <children>
+        <Button layoutX="64.0" layoutY="403.0" mnemonicParsing="false" onAction="#mainScreen" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;-fx-background-color: #011920 ;" text="Back">
+          <font>
+            <Font name="Kristen ITC" size="15.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Label fx:id="qoutes" layoutX="64.0" layoutY="49.0" prefHeight="33.9609375" prefWidth="418.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;" text="">
+          <font>
+            <Font name="Kristen ITC" size="18.0" />
+          </font>
+        </Label>
+        <Label fx:id="devId" font="$x1" layoutX="217.0" layoutY="396.0" prefHeight="33.9609375" prefWidth="185.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;" text="" />
+      </children>
+    </Pane>
+    <Label fx:id="aboutMe" font="$x1" layoutX="64.0" layoutY="97.0" prefHeight="167.0" prefWidth="483.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;" text="" />
+    <Label id="owner" fx:id="ownerId" font="$x1" layoutX="216.0" layoutY="244.0" prefHeight="95.0" prefWidth="240.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;" text="" />
+  </children>
+</AnchorPane>

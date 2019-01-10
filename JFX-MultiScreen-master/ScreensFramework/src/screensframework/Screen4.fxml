@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="screensframework.Screen4Controller">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="468.0" prefWidth="600.0">
+      <children>
+        <Text fill="#d1f2eb" layoutX="158.0" layoutY="37.0" scaleX="2.0673634702652826" scaleY="1.4085036372167314" strokeType="OUTSIDE" strokeWidth="0.0" text="Stats">
+          <font>
+            <Font name="Kristen ITC" size="14.0" />
+          </font>
+        </Text>
+        <Label fx:id="showStats" layoutX="28.0" layoutY="82.0" prefHeight="264.9609375" prefWidth="532.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;" text="">
+          <font>
+            <Font name="Kristen ITC" size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Button font="$x1" layoutX="73.0" layoutY="395.0" mnemonicParsing="false" onAction="#mainScreen" prefHeight="33.3155517578125" prefWidth="66.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;-fx-background-color: #011920 ;" text="Back" />
+        <Button font="$x1" layoutX="192.0" layoutY="395.0" mnemonicParsing="false" onAction="#clearStats" prefHeight="33.3155517578125" prefWidth="164.0" style="   -fx-text-fill: #D1F2EB; -fx-text: bold;&#10;-fx-background-color: #011920 ;" text="Clear Stats" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
