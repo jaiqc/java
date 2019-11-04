@@ -29,6 +29,7 @@ import java.util.logging.Logger;
 
 public class MyTimerTask extends TimerTask {
 
+    private int timeOut = 62; // Start with 0
     private int value1 = 0;
     private int value2 = 0;
     public int gCount = 0;
@@ -71,7 +72,7 @@ public class MyTimerTask extends TimerTask {
         }
         getUserInputUI();
         gCount = gCount + 1;
-        if (gCount >= 62) {
+        if (gCount >= timeOut) {
             gCount = 0;
             updateTimesUpUI();
             try {
@@ -147,6 +148,7 @@ public class MyTimerTask extends TimerTask {
     }
 
     private void clearScoreUI() {
+        gameScore = 0;
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
@@ -156,6 +158,7 @@ public class MyTimerTask extends TimerTask {
     }
 
     private void clearCountUI() {
+        gCount = 0;
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
@@ -336,6 +339,8 @@ public class MyTimerTask extends TimerTask {
 
     public void stopCountVal() throws IOException {
         computeGameStauts();
+        clearCountUI();
+        clearScoreUI();
         updateValueClearUI();
         ui.stopCount();
         ui.scoreScreenUpdate();

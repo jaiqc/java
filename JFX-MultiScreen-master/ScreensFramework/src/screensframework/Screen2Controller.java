@@ -162,11 +162,8 @@ public class Screen2Controller implements Initializable , ControlledScreen {
     }
     
     @FXML
-    private void gameStop(ActionEvent event){
-        stopCount();
-        gameTime.setText("");
-        gameScore.setText("");
-        showValue.setText("");
+    private void gameStop(ActionEvent event) throws IOException{
+        counterTask.stopCountVal();
         getInputValue.setVisible(false);
         passStatus.setText("");
     }
